@@ -1,66 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 	<title>Portfolio</title>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-<!-- Site Header -->
-  <div>
-    <header>
-      <!-- h1: The most important headline -->
-      <h1>Shreya Kondilya</h1>
-    </header>
 
-     <div class="navbar">
-        <ul>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li>
-        <li><a href="index.html">About</a></li>
-        </ul>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Shreya Kondilya</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-  </div>
+  </header>
 
-  <div class="container">
-
-  <section class="main-content">
-   <h2>Contact</h2>
-
-     <p class="line1">Name </p>
-     <p class="line2">John Smith</p>
-     <p class="line1">Email </p>
-     <p class="line2">Example@gmail.com</p>
-     <p class="line1">Message</p>
-     <p class="box"></p>
-     <p class="button">Submit</p>
-   </section> 
+    <div id="main-container" class="container">
+      <!-- Section 1: about me -->
+      <section class="main-section"> 
+            <!-- h2: Tier-2 Headline -->
+            <h1>Contact</h1>
+             <form id="contact-form">
+              <ul>
+                <li>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                </li>
+                <li>
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" required="required"></textarea>
+                </li>
+              </ul>
+              <input type="submit">
+             </form>
+      </section>
   
 
-    <!-- Section 2: Connect with me -->
-     <section class="connect">
+           <!-- Section 2: Connect with me -->
+        <section class="sidebar">
+           <div id="connect">
 
-        <!-- h2: Tier-2 Headline -->
-        <h2>Connect with Me</h2>
+            <!-- h2: Tier-2 Headline -->
+            <h2>Connect with Me</h2>
 
-        <!-- connect with me : images -->
-        <a href="https://github.com/skondilya">
-        <img class="img1" src="assets/images/github.png" alt="Github">
-        </a>
-        <a href="https://www.linkedin.com/in/shreya-kondilya-43173255?trk=nav_responsive_tab_profile">
-        <img class="img1" src="assets/images/linkedin.png" alt="linkedin">
-        </a>
+            <!-- connect with me : images -->
+            <a href="https://github.com/skondilya">
+            <img src="assets/images/github.png" class="social" alt="Github"/>
+            </a>
+
+            <a href="https://www.linkedin.com/in/shreya-kondilya-43173255?trk=nav_responsive_tab_profile">
+            <img src="assets/images/linkedin.png" class="social" alt="linkedin"/>
+            </a>
+            
+            <a href="http://stackoverflow.com/users/7338270/shreya-k">
+            <img src="assets/images/stackoverflow.png" class="social" alt="stackoverflow"/>
+            </a>
+
+          </div>
+        </section>
+      </div>
+      
+        <!-- footer -->
+        <footer>
+          <div class="container">
+            Copyright &copy; 2017 Shreya Kondilya
+          </div>
+        </footer> 
+
+</body>
+</html>
+
         
-        <a href="http://stackoverflow.com/users/7338270/shreya-k">
-        <img class="img1" src="assets/images/stackoverflow.png" alt="stackoverflow">
-        </a>
-    </section>
 
-      <!-- footer -->
-      <div class="footer">
-       &copy; Copyright 2017 Shreya Kondilya
-    </div>
-
-</div>
-
-
+          
