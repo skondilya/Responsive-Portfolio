@@ -244,7 +244,21 @@ a{
   text-decoration: none;
 }
 
+.p{
+font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
 
+/*@media screen with max-width 980px.*/
+@media screen and (max-width: 980px) {
+
+#main-container { 
+ width:100%;
+}
+
+
+}
+
+/*@media screen with max-width 768px.*/
 @media screen and (max-width: 768px) {
 
 .sidebar{ 
@@ -269,6 +283,7 @@ padding-right: 20px;
 
 }
 
+/*@media screen with max-width 640px.*/
 @media screen and (max-width: 640px) {
 
 .sidebar{ 
@@ -307,22 +322,7 @@ nav {
 
 }
 
-@media screen and (max-width: 980px) {
 
-#main-container { 
- max-width:94%;
- margin:3%;
- padding:3%;
-}
-
-
-#masthead{
-max-width:100%;
-padding-left: 20px;
-padding-right: 20px;
-
-}
-}
 
 
 
