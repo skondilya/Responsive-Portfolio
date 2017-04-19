@@ -244,82 +244,95 @@ a{
   text-decoration: none;
 }
 
-.p{
-font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+@media only screen and (max-width: 980px) {
+  .container {
+    
+    /* Box-model */
+    padding: 0 20px;
+    max-width: 768px;
+
+  }
+
+  main.container { padding-top: 130px; }
+
+  .main-section { max-width: 420px; }
+
+  .work { width: 100%; }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
-/*@media screen with max-width 980px.*/
-@media screen and (max-width: 980px) {
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar { max-width: 100%; }
 
-#main-container { 
- width:100%;
-}
+  main { overflow: auto; }
 
+  .work {
+    /* Positioning */
+    margin-bottom: 10px;
 
-}
+    /* Box-model */
+    width: 47%;
+    
+  }
 
-/*@media screen with max-width 768px.*/
-@media screen and (max-width: 768px) {
+  .work:nth-child(even){  margin-right: 0; }
 
-.sidebar{ 
-  max-width:96%;
-  margin-left:2%;
-  margin-right:2%;
-  float: left;
-}
+  .work:nth-child(odd) { float: right; }
 
- .main-section{ 
-  max-width: 96%; 
-  margin-left:2%;
-  margin-right: 2%;
-}
+  .auth-image { width: 50%; }
 
-#masthead{
-max-width:100%;
-padding-left: 20px;
-padding-right: 20px;
+  .sidebar { margin-bottom: 40px; }
 
 }
 
-}
+@media only screen and (max-width: 640px) {
 
-/*@media screen with max-width 640px.*/
-@media screen and (max-width: 640px) {
+  #masthead {
 
-.sidebar{ 
-  max-width:96%;
-  margin-left:2%;
-  margin-right:2%;
-  float: left;
-}
+    /* Positioning */
+    position: static;
+    margin-bottom: 20px;
 
- .main-section{ 
-  max-width: 96%; 
-  margin-left:2%;
-  margin-right: 2%;
-}
+  }
 
-#masthead{
-padding:0px;
-width:100%;
-float: left;
-}
+  header .container { padding: 0; }
 
-#logo {
-width:100%;
-padding: 0px;
-}
+  main.container { padding-top: 0; }
 
-nav {
-  width:96%;
-  margin:2%;
-  padding: 2%;
-}
+  #logo,
+  .work,
+  .auth-image { width: 100%; }
 
-#main-container {
-  padding-top: 190px;
-}
+  nav {
 
+    /* Positioning */
+    margin: 15px 0;
+
+    /* Box-model */
+    width: 100%;
+
+    /* Typography */
+    text-align: center;
+    
+  }
+
+  nav a {
+
+    /* Positioning */
+    margin-left: 0;
+
+    /* Box-model */
+    width: 30%;
+    padding-left: 0;
+    
+  }
+  
 }
 
 
